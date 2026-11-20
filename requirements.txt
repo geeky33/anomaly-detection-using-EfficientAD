@@ -1,0 +1,12 @@
+# Versions verified on the development machine (Python 3.13, CPU only).
+torch==2.10.0
+torchvision==0.25.0
+streamlit==1.47.0
+opencv-python==4.13.0.92
+numpy==2.2.6
+scikit-learn==1.7.0
+matplotlib==3.10.7
+pandas==2.3.1
+Pillow==11.0.0
+reportlab==4.2.5
+pytest==8.3.4

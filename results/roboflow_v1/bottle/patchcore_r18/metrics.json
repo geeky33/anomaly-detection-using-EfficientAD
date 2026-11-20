@@ -1,0 +1,90 @@
+{
+  "category": "bottle",
+  "num_test_images": 20,
+  "num_normal": 10,
+  "num_defective": 10,
+  "image_level": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "specificity": 1.0,
+    "accuracy": 1.0,
+    "iou": 1.0,
+    "confusion_matrix": {
+      "tn": 10,
+      "fp": 0,
+      "fn": 0,
+      "tp": 10
+    },
+    "auroc": 1.0
+  },
+  "pixel_level": {
+    "precision": 0.339438877499537,
+    "recall": 0.9996050404363362,
+    "f1": 0.5067866831307897,
+    "specificity": 0.9177527732495726,
+    "accuracy": 0.9210731506347656,
+    "iou": 0.3393933588761175,
+    "confusion_matrix": {
+      "tn": 1154120,
+      "fp": 103430,
+      "fn": 21,
+      "tp": 53149
+    },
+    "auroc": 0.9865772116592572,
+    "mean_iou_defective_images": 0.30503
+  },
+  "thresholds": {
+    "image": 1.8347506523132324,
+    "pixel": 1.3079681396484375,
+    "source": "10 held-out normal training images (no test data)"
+  },
+  "latency_ms": {
+    "mean": 62.957254750006086,
+    "median": 64.3681540000216,
+    "p95": 68.62456615000951,
+    "fps": 15.883792963509155
+  },
+  "pixel_eval_grid": "256x256",
+  "roc_curve": {
+    "fpr": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "tpr": [
+      0.0,
+      0.1,
+      1.0,
+      1.0
+    ]
+  },
+  "model_key": "patchcore_r18",
+  "model": {
+    "train_images": 480,
+    "patch_vectors": 376320,
+    "memory_bank_size": 20000,
+    "feature_dim": 384,
+    "fit_seconds": 551.8,
+    "category": "bottle",
+    "validation_images": [
+      "bottle_train_good_003.png",
+      "bottle_train_good_015.png",
+      "bottle_train_good_023.png",
+      "bottle_train_good_102.png",
+      "bottle_train_good_113.png",
+      "bottle_train_good_133.png",
+      "bottle_train_good_140.png",
+      "bottle_train_good_141.png",
+      "bottle_train_good_198.png",
+      "bottle_train_good_204.png"
+    ],
+    "calibration_source": "valid/good split (10 images); image = max validation score, pixel = 99.5th percentile",
+    "dataset": "roboflow_v1"
+  },
+  "device": "cpu",
+  "peak_rss_mb": 2521.6,
+  "torch_threads": 6,
+  "evaluated_at": "2026-11-19 01:00:18"
+}

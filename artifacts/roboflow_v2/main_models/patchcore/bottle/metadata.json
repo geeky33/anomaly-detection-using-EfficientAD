@@ -1,0 +1,90 @@
+{
+  "architecture": "patchcore",
+  "category": "bottle",
+  "dataset": "mvtec_ad",
+  "variant": "-",
+  "device": "cuda",
+  "validation_paths": [
+    "/content/iad/data/roboflow_v2/bottle/train/good/bottle_train_good_008.png",
+    "/content/iad/data/roboflow_v2/bottle/train/good/bottle_train_good_031.png",
+    "/content/iad/data/roboflow_v2/bottle/train/good/bottle_train_good_032.png",
+    "/content/iad/data/roboflow_v2/bottle/train/good/bottle_train_good_046.png",
+    "/content/iad/data/roboflow_v2/bottle/train/good/bottle_train_good_057.png",
+    "/content/iad/data/roboflow_v2/bottle/train/good/bottle_train_good_067.png",
+    "/content/iad/data/roboflow_v2/bottle/train/good/bottle_train_good_083.png",
+    "/content/iad/data/roboflow_v2/bottle/train/good/bottle_train_good_125.png",
+    "/content/iad/data/roboflow_v2/bottle/train/good/bottle_train_good_127.png",
+    "/content/iad/data/roboflow_v2/bottle/train/good/bottle_train_good_144.png",
+    "/content/iad/data/roboflow_v2/bottle/train/good/bottle_train_good_148.png",
+    "/content/iad/data/roboflow_v2/bottle/train/good/bottle_train_good_171.png",
+    "/content/iad/data/roboflow_v2/bottle/train/good/bottle_train_good_172.png",
+    "/content/iad/data/roboflow_v2/bottle/train/good/bottle_train_good_181.png",
+    "/content/iad/data/roboflow_v2/bottle/train/good/bottle_train_good_187.png",
+    "/content/iad/data/roboflow_v2/bottle/train/good/bottle_train_good_199.png"
+  ],
+  "training_config": {
+    "backbone": "wide_resnet50_2",
+    "layers": [
+      "layer2",
+      "layer3"
+    ],
+    "pretrained": true,
+    "image_size": 256,
+    "patch_size": 3,
+    "patch_stride": 1,
+    "pretrain_embed_dimension": 1024,
+    "target_embed_dimension": 1024,
+    "coreset_ratio": 0.1,
+    "num_neighbors": 1,
+    "smoothing_sigma": 4.0,
+    "seed": 42
+  },
+  "summary": {
+    "total_embeddings": 147456,
+    "coreset_size": 14745,
+    "coreset_ratio": 0.1,
+    "embedding_dim": 1024,
+    "fit_seconds": 126.60917364200031
+  },
+  "calibration": {
+    "image_threshold": 2.5570449829101562,
+    "pixel_threshold": 1.321170449256897,
+    "pixel_fpr_budget": 0.005,
+    "image_score_stats": {
+      "min": 1.4123687744140625,
+      "max": 2.5570449829101562,
+      "mean": 1.640318512916565,
+      "std": 0.2663186970538517,
+      "median": 1.5607662200927734,
+      "p99": 2.4569789886474607,
+      "p995": 2.507011985778809
+    },
+    "pixel_score_stats": {
+      "min": 0.052711259573698044,
+      "max": 2.199864625930786,
+      "mean": 0.5972408056259155,
+      "std": 0.24162164330482483,
+      "median": 0.6087990403175354,
+      "p99": 1.223548412322998,
+      "p995": 1.321170449256897
+    },
+    "num_validation_images": 16,
+    "source": "normal validation split (no test labels used)"
+  },
+  "num_parameters": 68883240,
+  "protocol": "standard",
+  "architecture_label": "PatchCore",
+  "checkpoint_path": "/content/iad/models/patchcore/bottle/checkpoint.ckpt",
+  "saved_at": "2026-11-18T20:27:24.808897+00:00",
+  "environment": {
+    "python_version": "3.13.16",
+    "torch_version": "2.14.1+cu130",
+    "numpy_version": "2.4.6",
+    "anomalib_version": "not installed",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "cuda_available": true,
+    "cuda_version": "13.0",
+    "git_commit": null
+  }
+}

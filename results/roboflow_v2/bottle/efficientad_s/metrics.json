@@ -1,0 +1,86 @@
+{
+  "category": "bottle",
+  "num_test_images": 20,
+  "num_normal": 10,
+  "num_defective": 10,
+  "image_level": {
+    "precision": 0.9,
+    "recall": 0.9,
+    "f1": 0.9,
+    "specificity": 0.9,
+    "accuracy": 0.9,
+    "iou": 0.8181818181818182,
+    "confusion_matrix": {
+      "tn": 9,
+      "fp": 1,
+      "fn": 1,
+      "tp": 9
+    },
+    "auroc": 0.95
+  },
+  "pixel_level": {
+    "precision": 0.617555487053021,
+    "recall": 0.7535640398721083,
+    "f1": 0.6788140618382041,
+    "specificity": 0.9802687765894,
+    "accuracy": 0.9710723876953125,
+    "iou": 0.5137914673710937,
+    "confusion_matrix": {
+      "tn": 1232737,
+      "fp": 24813,
+      "fn": 13103,
+      "tp": 40067
+    },
+    "auroc": 0.9814228625062867,
+    "mean_iou_defective_images": 0.50185
+  },
+  "thresholds": {
+    "image": 0.2020806223154068,
+    "pixel": 0.056749410927295685,
+    "source": "16 held-out normal training images (no test data)"
+  },
+  "latency_ms": {
+    "mean": 478.71524105000844,
+    "median": 455.24092349978673,
+    "p95": 579.6949327999073,
+    "fps": 2.088924509289931
+  },
+  "pixel_eval_grid": "256x256",
+  "roc_curve": {
+    "fpr": [
+      0.0,
+      0.0,
+      0.0,
+      0.1,
+      0.1,
+      0.3,
+      0.3,
+      1.0
+    ],
+    "tpr": [
+      0.0,
+      0.1,
+      0.7,
+      0.7,
+      0.9,
+      0.9,
+      1.0,
+      1.0
+    ]
+  },
+  "model_key": "efficientad_s",
+  "model": {
+    "category": "bottle",
+    "train_images": 144,
+    "memory_bank_size": null,
+    "patch_vectors": null,
+    "feature_dim": null,
+    "fit_seconds": null,
+    "input_size": 256,
+    "calibration_source": "main platform: 10 % of train/good (seed 42); image = max validation score, pixel = 99.5th percentile"
+  },
+  "device": "cpu",
+  "peak_rss_mb": 977.4,
+  "torch_threads": 6,
+  "evaluated_at": "2026-11-19 02:52:17"
+}

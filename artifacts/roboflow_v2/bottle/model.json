@@ -1,0 +1,53 @@
+{
+  "config": {
+    "image_size": 224,
+    "coreset_ratio": 0.1,
+    "max_bank": 20000,
+    "projection_dim": 128,
+    "smoothing_sigma": 4.0,
+    "batch_size": 8,
+    "seed": 0,
+    "image_threshold_rule": "max score of normal validation images",
+    "pixel_quantile": 0.995
+  },
+  "info": {
+    "train_images": 160,
+    "patch_vectors": 125440,
+    "memory_bank_size": 12544,
+    "feature_dim": 384,
+    "fit_seconds": 221.6,
+    "category": "bottle",
+    "validation_images": [
+      "bottle_train_good_003.png",
+      "bottle_train_good_015.png",
+      "bottle_train_good_023.png",
+      "bottle_train_good_102.png",
+      "bottle_train_good_113.png",
+      "bottle_train_good_133.png",
+      "bottle_train_good_140.png",
+      "bottle_train_good_141.png",
+      "bottle_train_good_198.png",
+      "bottle_train_good_204.png"
+    ],
+    "calibration_source": "valid/good split (10 images); image = max validation score, pixel = 99.5th percentile",
+    "dataset": "roboflow_v2"
+  },
+  "calibration": {
+    "image_threshold": 1.9643466472625732,
+    "pixel_threshold": 1.2713156938552856,
+    "validation_scores": [
+      1.1019330024719238,
+      1.1937980651855469,
+      1.4188669919967651,
+      1.024703025817871,
+      1.1373662948608398,
+      1.2380902767181396,
+      1.569549560546875,
+      1.9643466472625732,
+      1.2137064933776855,
+      1.0820029973983765
+    ],
+    "num_validation_images": 10
+  },
+  "backbone": "torchvision resnet18 IMAGENET1K_V1 (frozen)"
+}

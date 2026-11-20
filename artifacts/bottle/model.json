@@ -1,0 +1,73 @@
+{
+  "config": {
+    "image_size": 224,
+    "coreset_ratio": 0.1,
+    "max_bank": 20000,
+    "projection_dim": 128,
+    "smoothing_sigma": 4.0,
+    "batch_size": 8,
+    "seed": 0,
+    "image_threshold_rule": "max score of normal validation images",
+    "pixel_quantile": 0.995
+  },
+  "info": {
+    "train_images": 188,
+    "patch_vectors": 147392,
+    "memory_bank_size": 14739,
+    "feature_dim": 384,
+    "fit_seconds": 245.5,
+    "category": "bottle",
+    "validation_images": [
+      "006.png",
+      "017.png",
+      "025.png",
+      "041.png",
+      "071.png",
+      "080.png",
+      "083.png",
+      "112.png",
+      "116.png",
+      "141.png",
+      "152.png",
+      "159.png",
+      "162.png",
+      "163.png",
+      "164.png",
+      "175.png",
+      "178.png",
+      "194.png",
+      "195.png",
+      "200.png",
+      "206.png"
+    ]
+  },
+  "calibration": {
+    "image_threshold": 1.7383569478988647,
+    "pixel_threshold": 1.1383211612701416,
+    "validation_scores": [
+      1.3998783826828003,
+      1.1411616802215576,
+      1.0650389194488525,
+      1.1197463274002075,
+      1.2828322649002075,
+      1.0898761749267578,
+      1.137095332145691,
+      1.1219321489334106,
+      1.1677091121673584,
+      1.7383569478988647,
+      1.334355354309082,
+      1.128897786140442,
+      1.0904141664505005,
+      1.090093970298767,
+      1.1546190977096558,
+      1.1034603118896484,
+      1.1186786890029907,
+      1.4439895153045654,
+      1.1094841957092285,
+      1.220367193222046,
+      1.2093920707702637
+    ],
+    "num_validation_images": 21
+  },
+  "backbone": "torchvision resnet18 IMAGENET1K_V1 (frozen)"
+}

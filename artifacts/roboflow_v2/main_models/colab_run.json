@@ -1,0 +1,12 @@
+{
+ "times_s": {
+  "patchcore": 146,
+  "efficientad_s": 396,
+  "efficientad_m": 646
+ },
+ "iters": {
+  "efficientad_s": 2500,
+  "efficientad_m": 1500
+ },
+ "gpu": "Tesla T4"
+}

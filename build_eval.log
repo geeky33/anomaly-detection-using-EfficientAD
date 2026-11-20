@@ -1,0 +1,9 @@
+Building memory bank from 188 normal images; 21 held out for calibration.
+Memory bank: 14739 of 147392 patch vectors (245.5 s).
+Thresholds: image 1.7384, pixel 1.1383.
+
+bottle: 83 test images (20 normal, 63 defective)
+Image  AUROC 1.0000  P 1.0000  R 0.9841  F1 0.9920  {'tn': 20, 'fp': 0, 'fn': 1, 'tp': 62}
+Pixel  AUROC 0.9811  P 0.2989  R 0.9988  F1 0.4601  IoU 0.2988  mean IoU (defective) 0.2744
+Latency mean 50.2 ms  median 48.0  p95 57.7  FPS 19.9
+wall=261.11s peakRSS=1549748KB
